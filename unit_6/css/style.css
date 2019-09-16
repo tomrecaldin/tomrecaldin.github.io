@@ -1,27 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 * {margin:0; padding:0; box-sizing:border-box;}
-img {width:200px;}
-article {padding:5em 0;}
+img {
+	width:200px;
+	display: block;
+	
+}
+
+article {
+	padding:5em 0;
+}
 
 header {
-	background-color: #FFED74;
+	background-color: white;
 	border: 1px black solid;
 	padding: 20px;
 }
 
 h1 {
 	text-align: center;
+	font-size: 100px;
 }
 
-nav {
-	background-color: #E8C66A;
-	border: 1px black solid;
-	padding: 20px;
+header p {
+	text-align: center;
+	font-size: 40px;
+}
+
+nav a {
+	float: left;
+	width: 25%;
+	color: white;
+	background-color: #d4021d;
+	text-decoration: none;
+	text-align: center;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+nav a:hover {
+	background-color: white;
+	color: #d4021d;
 }
 
 body {
 	background-color: red;
-	color:#333;
+	color:#d4021d;
 	font-family:helvetica, sans-serif;
 	font-size:20px;
 	font-weight:400;
@@ -29,12 +52,12 @@ body {
 }	
 
 section{
-	background-color: #FFE2B8;
+	background-color: #d4021d;
 	border: 1px black solid;
 	padding: 20px;
 }
 
-.clearfix: after {
+.clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -44,9 +67,19 @@ section{
 }
 
 #Upcoming_Fixtures {
-	background-color: #FFB7CF;
-	border: 1px black solid;
-	padding: 20px;
+	width: 800px;
+	margin: auto;
+}
+
+#Upcoming_Fixtures article {
+	width: 50%;
+	float: left;
+	padding: 0 2em;
+	text-align: center;
+}
+
+#Upcoming_Fixtures img {
+	width: 100%;
 }
 
 #left {
@@ -56,7 +89,6 @@ section{
 	float: left;
 	width: 30%;
 }
-
 
 #right{
 	background-color: pink;
